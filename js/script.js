@@ -2,14 +2,14 @@ const carousel = document.getElementById('carousel');
 
 document.querySelector('.left').addEventListener('click', () => {
     carousel.scrollBy({
-        left: -230,
+        left: -250,
         behavior: 'smooth'
     });
 });
 
 document.querySelector('.right').addEventListener('click', () => {
     carousel.scrollBy({
-        left: 230,
+        left: 250,
         behavior: 'smooth'
     });
 });

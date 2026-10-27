@@ -314,8 +314,8 @@ header ul li{
     border-radius: 50%;
     border: 1px solid var(--destaque);
     box-sizing: border-box;
-    width: 120px;
-    height: 120px;
+    width: 135px;
+    height: 135px;
     text-align: center;
     padding: 20px;
     background: #fff;
@@ -563,7 +563,7 @@ footer ul li:hover {
 }
 
 .img-edicoes {
-    width: 175px;
+    width: 190px;
     object-fit: contain;
     z-index: 1002;
 }
@@ -630,7 +630,7 @@ footer ul li:hover {
     }
 
     header {
-        padding: 10px 10px;
+        padding: 5px 10px;
     }
 
     .hamburger {
@@ -664,7 +664,7 @@ footer ul li:hover {
     }
 
     #hero {
-        padding: 80px 10px 20px 10px;
+        padding: 75px 10px 20px 10px;
     }
 
     .bloco-cta {
@@ -715,6 +715,15 @@ footer ul li:hover {
     }
 
     .container-totem {
+        padding: 40px 10px;
+    }
+
+    .text-totem {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container-beneficios {
         padding: 40px 10px;
     }
 
