@@ -135,7 +135,7 @@ header ul li:hover {
   text-decoration-color: var(--destaque); 
 }
 
-header ul li{
+header ul li a{
     color: black;
 }
 
@@ -145,6 +145,12 @@ header ul li{
     background-color: #fff;
     border: 1px solid rgba(0,0,0,.04);
     box-shadow: 0 4px 20px rgba(0,0,0,.03);
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
 }
 
 .container-hero {
@@ -294,6 +300,10 @@ header ul li{
     color: var(--destaque);
     font-weight: 550;
     font-size: 1rem;
+}
+
+#beneficios h2 {
+    text-align: center;
 }
 
 .container-beneficios {
@@ -507,7 +517,7 @@ footer ul li:hover {
   text-decoration-color: var(--destaque); 
 }
 
-.nav-footer ul li {
+.nav-footer ul li a{
     color: white;
 }
 
@@ -563,7 +573,7 @@ footer ul li:hover {
 }
 
 .img-edicoes {
-    width: 190px;
+    width: 200px;
     object-fit: contain;
     z-index: 1002;
 }

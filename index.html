@@ -12,7 +12,7 @@
 </head>
 <body>
     <header>
-        <img src="./images/inova.png" class="logo">
+        <img src="./images/inova.png" class="logo" alt="Logótipo da Inova+">
 
         <button class="hamburger">
             <span></span>
@@ -22,11 +22,11 @@
 
         <nav>
             <ul>
-                <a href="#hero"><li>Inicio</li></a>
-                <a href="#sobre"><li>Sobre nós</li></a>
-                <a href="#totem"><li>Totens</li></a>
-                <a href="#contacto"><li>Contacto</li></a>
-                <a href="#edicao-anterior"><li>Edições anteriores</li></a>
+                <li><a href="#hero">Inicio</a></li>
+                <li><a href="#sobre">Sobre nós</a></li>
+                <li><a href="#totem">Totens</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#edicao-anterior">Edições anteriores</a></li>
             </ul>
         </nav>
         <a class="cta mobile" href="https://wa.me/351960450575?text=Olá,%20gostaria%20de%20mais%20informações."><i class="fa-solid fa-bullhorn"></i> Anunciar conosco</a>
@@ -38,7 +38,7 @@
                     <div class="text-hero">
                         <p><span class="destaque">Edição de novembro 2026</span></p>
                         <h1>Covilhã em destaque. <span class="destaque">Marcas em movimento.</span></h1>
-                        <h3>A revista digital que aproxima pessoas, ideias e negócios da região.</h3>
+                        <h2>A revista digital que aproxima pessoas, ideias e negócios da região.</h2>
                         <p>Histórias reais, negócios locais e uma curadoria feita para quem vive e constrói a região.</p>
                     </div>
                     <div class="bloco-cta">
@@ -58,17 +58,14 @@
                         </div>
                     </div>
                     <div class="empresas">
-                        <img alt="" src="./images/associacao.png">
-                        <img alt="" src="./images/covilha.png">
-                        <img alt="" src="./images/fundao.png">
+                        <img alt="Logótipo da Associação Empresarial da Covilhã" src="./images/associacao.png">
+                        <img alt="Escudo da cidade de covilhã" src="./images/covilha.png">
+                        <img alt="Escudo da cidade do Fundão" src="./images/fundao.png">
                     </div>
                 </div>
                 <div class="revista col-7">
                     <iframe 
                         src="https://heyzine.com/flip-book/b25a984032.html"
-                        width="100%" 
-                        height="100%" 
-                        frameborder="0"
                         allowfullscreen>
                     </iframe>
                 </div>
@@ -116,7 +113,7 @@
                 </div>
                 <div class="publico-sobre col-4">
                     <div class="titulo-publico">
-                        <img src="./images/stickers/publico.png" class="sticker">
+                        <img src="./images/stickers/publico.png" class="sticker" alt="Ícone representando o público-alvo">
                         <h3>O nosso publico</h3>
                     </div>
                     <div class="content-publico">
@@ -130,26 +127,27 @@
                 </div>
             </div>
         </section>
-        <section>
+        <section id="beneficios">
+            <h2>Beneficios para sua empresa.</h2>
             <div class="container-beneficios">
                 <div class="beneficios">
-                    <img alt="beneficios" class="sticker" src="./images/stickers/vizualizacao.png">
+                    <img alt="Ícone de visibilidade" class="sticker" src="./images/stickers/vizualizacao.png">
                     <p>Visibilidade</p>
                 </div>
                 <div class="beneficios">
-                    <img alt="beneficios" class="sticker" src="./images/stickers/credibilidade.png">
+                    <img alt="Ícone de credibilidade" class="sticker" src="./images/stickers/credibilidade.png">
                     <p>Credibilidade</p>
                 </div>
                 <div class="beneficios">
-                    <img alt="beneficios" class="sticker" src="./images/stickers/network.png">
+                    <img alt="Ícone de networking estratégico" class="sticker" src="./images/stickers/network.png">
                     <p>Networking Estratégico</p>
                 </div>
                 <div class="beneficios">
-                    <img alt="beneficios" class="sticker" src="./images/stickers/negocios.png">
+                    <img alt="Ícone de geração de negócios" class="sticker" src="./images/stickers/negocios.png">
                     <p>Geração de Negócios</p>
                 </div>
                 <div class="beneficios">
-                    <img alt="beneficios" class="sticker" src="./images/stickers/local.png">
+                    <img alt="Ícone de posicionamento regional" class="sticker" src="./images/stickers/local.png">
                     <p>Posicionamento Regional</p>
                 </div>
             </div>
@@ -157,7 +155,7 @@
         <section id="totem">
             <div class="container-totem row">
                 <div class="bloco-totem col-4">
-                    <img alt="imagem totens" class="img-totem" src="./images/totem.png">
+                    <img alt="Totem digital da revista Inova+" class="img-totem" src="./images/totem.png">
                 </div>
                 <div class="text-totem col-5">
                     <h2>A revista também esta nas ruas da Covilhã.</h2>
@@ -165,7 +163,7 @@
                     <a class="cta" href="https://wa.me/351960450575?text=Olá,%20gostaria%20de%20mais%20informações." target="_blank">Divulgar a minha marca</a>
                 </div>
                 <div class="maps-totem col-3">
-                    <img alt="localização das cidades" class="img-maps" src="./images/maps.png">
+                    <img alt="Mapa das localizações dos totens digitais" class="img-maps" src="./images/maps.png">
                     <p>A sua marca no coração da cidade</p>
                 </div>
             </div>
@@ -180,9 +178,9 @@
                     <form>
                         <div>
                             <label for="name"></label>
-                            <input id="name" type="text" placeholder="Nome">
+                            <input name="nome" id="name" type="text" placeholder="Nome">
                             <label for="email"></label>
-                            <input id="email" type="email" placeholder="email">
+                            <input name="email" id="email" type="email" placeholder="email">
                         </div>
                         <textarea placeholder="Mensagem"></textarea>
                         <button>Enviar mensagem</button>
@@ -192,21 +190,21 @@
                     <div class="sub-contato">
                         <img alt="localização" class="sticker-contato" src="./images/stickers/localização.png">
                         <div>
-                            <h4>Covilhã, Portugal</h4>
+                            <p><b>Covilhã, Portugal</b></p>
                             <p>Estamos disponiveis para si.</p>
                         </div>
                     </div>
                     <div class="sub-contato">
                         <img alt="Contacto" class="sticker-contato" src="./images/stickers/contato.png">
                         <div>
-                            <h4>Contacto</h4>
+                            <p><b>Contacto</b></p>
                             <p>Envia-nos a sua mensagem.</p>
                         </div>
                     </div>
                     <div class="sub-contato">
                         <img alt="Atendimento" class="sticker-contato" src="./images/stickers/horario.png">
                         <div>
-                            <h4>Horario de atendimento</h4>
+                            <p><b>Horario de atendimento</b><p>
                             <p>Segunda à sexta - 09h - 18h </p>
                         </div>
                     </div>
@@ -214,7 +212,9 @@
             </div>
         </section>
         <section class="section-carousel" id="edicao-anterior">
-            <h2>Edições anteriores</h2>
+            <div>
+                <h2>Edições anteriores</h2>
+            </div>
             <div class="container-edicoes">
                 <button class="arrow left">&#10094;</button>
                 <div class="content-edicoes" id="carousel">
@@ -250,6 +250,10 @@
                         <a href="https://heyzine.com/flip-book/RevistaInovaMais_Abril26" target="_blank"><img src="./images/edicoes/abril26.png" class="img-edicoes" alt="capa da revista inova+ de setembro de 2026"></a>
                         <p>Edição fevereiro 2026</p>
                     </div>
+                    <div>
+                        <a href="https://heyzine.com/flip-book/RevistaInovaMais_Abril26" target="_blank"><img src="./images/edicoes/abril26.png" class="img-edicoes" alt="capa da revista inova+ de setembro de 2026"></a>
+                        <p>Edição janeiro 2026</p>
+                    </div>
                 </div>
                 <button class="arrow right">&#10095;</button>
             </div>
@@ -258,17 +262,17 @@
     <footer>
         <div class="container-footer row">
             <div class="logo-footer col-3">
-                <img alt="logo" class="logo" src="./images/inova.png">
+                <img alt="Logótipo da Inova+" class="logo" src="./images/inova.png">
                 <p>A revista digital que liga Covilhã às suas pessoas, marcas e ideias.</p>
             </div>
             <div class="nav-footer col-6">
                 <nav>
                     <ul>
-                        <a href="#hero"><li>Inicio</li></a>
-                        <a href="#sobre"><li>Sobre nós</li></a>
-                        <a href="#totem"><li>Totens</li></a>
-                        <a href="#contacto"><li>Contacto</li></a>
-                        <a href="#edicao-anterior"><li>Edições anteriores</li></a>
+                        <li><a href="#hero">Inicio</a></li>
+                        <li><a href="#sobre">Sobre nós</a></li>
+                        <li><a href="#totem">Totens</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                        <li><a href="#edicao-anterior">Edições anteriores</a></li>
                     </ul>
                 </nav>
             </div>
