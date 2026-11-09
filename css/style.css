@@ -4,20 +4,29 @@
     --destaque: #DE3E1C;
 }
 
+h1, h2 {
+    font-family: 'Playfair Display', serif;
+}
+
+h3, h4, h5, h6,
+p, li {
+    font-family: 'Montserrat', sans-serif;
+}
+
 h1 {
-    font-size: 3.2rem;
+    font-size: 3rem;
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: 1.8rem;
 }
 
 h3 {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
 }
 
 p {
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 a {
@@ -140,7 +149,7 @@ header ul li a{
 }
 
 #hero {
-    padding: 85px 40px 20px 40px;
+    padding: 75px 40px 20px 40px;
     height: 100%;
     background-color: #fff;
     border: 1px solid rgba(0,0,0,.04);
@@ -161,13 +170,17 @@ iframe {
 .content-hero {
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 20px;
 }
 
 .text-hero {
     display: flex;
     flex-direction: column;
     gap: 10px;
+}
+
+.text-hero h1 {
+    line-height: 55px;
 }
 
 .bloco-cta {
@@ -191,10 +204,15 @@ iframe {
 
 .empresas {
     display: flex;
-    margin-top: 15px;
+    margin-top: 10px;
     height: 40px;
     gap: 15px;
     padding: 5px 0px;
+}
+
+.edicao {
+    display: flex;
+    flex-direction: column;
 }
 
 .destaque-edicao {
@@ -205,39 +223,45 @@ iframe {
     width: 90%;
     height: 100%;
     gap: 10px;
-    padding: 5px;
-    position: relative;
+    padding: 5px 5px;
+    justify-content: center;
 }
 
 .destaque-edicao ul {
     list-style-position: inside;
+    line-height: 25px;
 }
 
 .container-parcerias {
+    display: flex;
+    flex-direction: column;
     padding: 40px 40px;
+    width: 100%;
     gap: 25px;
 }
 
-.content-parcerias {
-    gap: 20px;
-}
-
 .img-parcerias {
-    width: 120px;
+    margin: 0 auto;
+    object-fit: contain;
+    height: 220px;
+    width: 100%;
 }
 
 .bloco-parcerias {
-    padding: 15px;
     border-radius: 5px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 5px;
-    min-width: 100%;
-    min-height: 180px;
+    padding: 15px;
+    gap: 15px;
+    max-width: 85%;
     background: #fff;
     border: 1px solid rgba(0,0,0,.04);
     box-shadow: 0 4px 20px rgba(0,0,0,.03);
+    justify-content: space-evenly;
+}
+
+.bloco-parcerias p {
+    font-size: 0.9rem;
 }
 
 .bloco-parcerias a {
@@ -267,6 +291,12 @@ iframe {
     black 70%,
     transparent 100%
   );
+}
+
+.text-sobre {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .publico-sobre {
@@ -302,15 +332,20 @@ iframe {
     font-size: 1rem;
 }
 
+#beneficios {
+    padding: 40px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
 #beneficios h2 {
     text-align: center;
 }
 
 .container-beneficios {
-    padding: 40px 40px;
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
 }
 
 .beneficios {
@@ -364,10 +399,10 @@ iframe {
 }
 
 .text-totem {
-    max-width: 550px;
+    max-width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 10px;
 }
 
 .text-totem a {
@@ -428,12 +463,11 @@ iframe {
 form {
     display: flex;
     flex-direction: column;
-    width: 80%;
-    min-height: 180px;
+    width: 70%;
+    min-height: 200px;
 }
 
 form div {
-    display: flex;
     width: 100%;
     margin-bottom: 5px;
 }
@@ -560,9 +594,9 @@ footer ul li:hover {
 .content-edicoes {
     display: flex;
     max-width: 85%;
-    overflow-x: hidden;
+    overflow: hidden;
     gap: 50px;
-    padding: 20px 0px;
+    padding: 20px 20px;
 }
 
 .content-edicoes div {
@@ -570,16 +604,17 @@ footer ul li:hover {
     flex-direction: column;
     align-items: center;
     gap: 15px;
+    position: relative;
 }
 
 .img-edicoes {
     width: 200px;
-    object-fit: contain;
-    z-index: 1002;
+    transition: transform 0.5s ease-in-out;
 }
 
 .img-edicoes:hover {
     transform: scale(1.1);
+    position: relative;
 }
 
 .arrow {
@@ -702,10 +737,17 @@ footer ul li:hover {
     .container-parcerias {
         padding: 40px 10px;
         gap: 25px;
+        align-items: center;
+    }
+
+    .content-parcerias {
+        gap: 25px;
+        width: 100%;
     }
 
     .bloco-parcerias {
         grid-column: span 6;
+        margin: 0 auto;
     }
 
     .container-sobre {
@@ -758,9 +800,8 @@ footer ul li:hover {
         padding: 40px 10px;
     }
 
-    .container-edicoes {
-        gap: 10px;
-        margin-left: 15px;
+    .content-edicoes {
+        padding: 20px 0px;
     }
 
     .arrow {
@@ -773,12 +814,6 @@ footer ul li:hover {
 
     .right {
         right: 2px;
-    }
-
-    .img-edicoes {
-        width: 200px;
-        object-fit: contain;
-        z-index: 1002;
     }
 
     .container-footer {

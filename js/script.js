@@ -30,3 +30,17 @@ links.forEach(link => {
         document.body.classList.remove('menu-open');
     });
 });
+
+document.getElementById('whatsappForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    const nome = document.getElementById('name').value;
+    const mensagem = document.getElementById('mensagem').value;
+
+    const texto = `Olá! Meu nome é ${nome}%0A%0A${mensagem}`;
+
+    window.open(
+        `https://wa.me/351960450575?text=${texto}`,
+        '_blank'
+    );
+});
